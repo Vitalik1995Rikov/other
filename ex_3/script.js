@@ -6,6 +6,7 @@ if (!user.name) {
 }
 alert(user.name);
 } catch(err) {
-    alert(err.name)
-    alert(err.message)
+    alert(err.name);
+    alert(err.message);
+    alert(err.stack);
 }
