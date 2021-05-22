@@ -17,10 +17,10 @@ function readUser(json) {
 }
 
 try {
-    let user = readUser({"age": 25});
+    let user = readUser({"age": 25}); 
 } catch(err) {
     if (err instanceof ValidationError) {
-        alert('Некорректные данные:' + err.message);
+        alert('Некорректные данные:' + err.message); // нет поля
     } else {
         throw err;
     }
